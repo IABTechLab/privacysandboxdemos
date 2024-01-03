@@ -1,0 +1,20 @@
+<title>Publisher Site - Component Auctions</title>
+	<script src="domain.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded', async (e) => {
+		  var iframeSSP = document.createElement('iframe');
+		  iframeSSP.src = `${topLevelSeller}/ssp/ad-tag-components.html`;
+		  iframeSSP.style = 'border: 0px';
+		  document.body.appendChild(iframeSSP);
+
+		  var iframeDSP = document.createElement('iframe');
+		  iframeDSP.src = `${buyer1}//dsp/ig.html`;
+		  iframeDSP.style = 'border: 0px';
+		  document.body.appendChild(iframeDSP);
+
+		  var iframeDSP2= document.createElement('iframe');
+		  iframeDSP2.src = `${buyer2}//dsp/ig2.html`;
+		  iframeDSP2.style = 'border: 0px';
+		  document.body.appendChild(iframeDSP2);
+	});
+</script>

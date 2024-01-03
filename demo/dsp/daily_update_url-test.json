@@ -1,0 +1,30 @@
+{
+	"ads": [
+		{
+			"renderUrl": "https://privacysandboxdemos-advertiser.casalemedia.com/advertiser/test-ad-3.html",
+			"metadata": {
+				"type": "shoes",
+				"crid": "shoes_ad_3_crid",
+				"cid": "shoes_ad_3_cid",
+				"cat": ["IAB-3"],
+				"seat": "shoes_ad_3_seat_id",
+				"adomain": ["shoes_ad_3_adomain.com"],
+				"w": 300,
+				"h": 250
+			}
+		},
+		{
+			"renderUrl": "https://privacysandboxdemos-advertiser.casalemedia.com/advertiser/test-ad-4.html",
+			"metadata": {
+				"type": "shoes",
+				"crid": "shoes_ad_4_crid",
+				"cid": "shoes_ad_4_cid",
+				"cat": ["IAB-4"],
+				"seat": "shoes_ad_4_seat_id",
+				"adomain": ["shoes_ad_4_adomain.com"],
+				"w": 300,
+				"h": 250
+			}
+		}
+	]
+}

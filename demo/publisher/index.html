@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="/globals.css"/>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="cards">
+    <div class="sandbox-card">
+        <p class="privacy-sandbox-demo">
+            <span class="title-wrapper">Privacy Sandbox Demo</span><span class="span">🏖️</span>
+        </p>
+    </div>
+    <div class="sandbox-card">
+
+        <p class="card-description">
+            This website showcases a demo for protected audiences, and links out to other demos and resources.
+        </p>
+    </div>
+    <div class="sandbox-card">
+        <div class="navigation">
+            <div class="selected-tab">
+                <div class="tab-label">
+                    DEMOS
+                </div>
+            </div>
+            <div class="unselected-tab" onclick="location.href='/resources/';">
+                <div class="tab-enabled">RESOURCES</div>
+            </div>
+
+        </div>
+        <div class="navigator-divider"></div>
+    </div>
+
+    <div class="sandbox-card">
+        <div class="demo-title">Protected Audience Demo</div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="sandbox-card">
+        <p class="demo-description">
+            This demo simulates both an advertiser website and a publisher website so that you can see all the Protected
+            Audience functionality in one spot. Open the Developer Console, join an Interest Group (IG), and then run the auction.
+        </p>
+
+    </div>
+
+
+    <div class="sandbox-card">
+        <div class="sandbox-demo-ad-area">
+            <div class="SSP">
+                <div class="div-wrapper">
+                    <div class="text-wrapper-6">PUBLISHER</div>
+                </div>
+            </div>
+            <div class="ad-box">
+                <div class="ad">
+                    <div class="overlap-3">
+                        <div class="demo-ad-slot-area" id="fledge-iframe">300x250</div>
+
+
+                    </div>
+                    <div id="run" class="button1">Run Auction</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="sandbox-card">
+        <div class="demo-configuration-wrapper">
+            <div class="overlap-4">
+                <div class="advertiser-label">ADVERTISER</div>
+            </div>
+
+            <iframe width="100%" height="225px" style="border:0;" scrolling="no"
+                    src="https://privacysandboxdemos-buyer-1.casalemedia.com/demand-iframe.html">
+
+            </iframe>
+
+        </div>
+    </div>
+
+    <div class="sandbox-card">
+        <div class="demo-configuration-wrapper">
+            <div class="overlap-4">
+                <div class="advertiser-label">ADVERTISER</div>
+            </div>
+
+            <iframe width="100%" height="225px" style="border:0;" scrolling="no"
+                    src="https://privacysandboxdemos-buyer-2.casalemedia.com/publisher/demand-iframe2.html">
+
+            </iframe>
+
+        </div>
+    </div>
+
+
+    <div class="sandbox-card footer">
+    <div class="navigator-divider"></div>
+    <p class="text-wrapper-4">Copyright 2023, All Rights Reserved.</p>
+    <p class="text-wrapper-5">
+        Donated by
+        <a href="https://indexexchange.com">Index Exchange</a></p>
+</div>
+
+</div>
+</body>
+</html>
+<script src="domain.js"></script>
+<script src="supply.js"></script>
+<script>
+    const psEnabled = ('joinAdInterestGroup' in navigator && document.featurePolicy.allowsFeature('join-ad-interest-group'));
+
+    if (!psEnabled) {
+        var element =  document.getElementById("run");
+        var content = document.createTextNode("Privacy Sandbox not enabled on this browser");
+        element.replaceWith(content);
+    }
+
+</script>
+
