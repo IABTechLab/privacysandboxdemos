@@ -26,6 +26,29 @@
             <div class="selected-tab">
                 <div class="tab-label">
                     DEMOS
+
+                    <div class="tab-dropdown">
+                        <ul>
+                            <li>
+                                <a href="https://www.privacysandboxdemos.com/">
+                                    Single Auction Demo<br/>
+                                    <span class="desc">Simulates a website with one SSP, one DSP, and no ad server.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.privacysandboxdemos.com/publisher">
+                                    Multi-Auction Demo<br/>
+                                    <span class="desc">Simulates a website with two SSPs, two DSPs, and no ad server.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.privacysandboxdemos.com/gpt">
+                                    Multi-Auction + Ad Server Demo<br/>
+                                    <span class="desc">Simulates a website with two SSPs, two DSPs, and integrates Google’s ad server.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="unselected-tab" onclick="location.href='/resources/';">
@@ -44,7 +67,8 @@
     <div class="sandbox-card">
         <p class="demo-description">
             This demo simulates both an advertiser website and a publisher website so that you can see all the Protected
-            Audience functionality in one spot. Please see this video for a demonstration of how to understand it.
+            Audience functionality in one spot. Open the Developer Console, join an Interest Group (IG), and then run
+            the auction.
         </p>
 
     </div>
@@ -99,12 +123,13 @@
         </div>
     </div>
 
-
-<div class="sandbox-card">
-    <div class="navigator-divider"></div>
-    <p class="text-wrapper-4">Copyright 2023, All Rights Reserved.</p>
-    <p class="text-wrapper-5">Donated by Index Exchange</p>
-</div>
+    <div class="sandbox-card footer">
+        <div class="navigator-divider"></div>
+        <p class="text-wrapper-4">Copyright 2023, All Rights Reserved.</p>
+        <p class="text-wrapper-5">
+            Donated by
+            <a href="https://indexexchange.com">Index Exchange</a></p>
+    </div>
 
 </div>
 

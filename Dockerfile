@@ -1,6 +1,6 @@
 FROM nginx:1.25.0
 RUN apt-get update && apt-get install -y npm
-COPY demo/* /usr/share/nginx/html
+COPY demo/* /usr/share/nginx/html/
 COPY demo/simple/ /usr/share/nginx/html/
 COPY demo/simple/ /usr/share/nginx/html/simple
 COPY demo/prebid/ /usr/share/nginx/html/prebid

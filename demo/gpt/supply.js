@@ -21,17 +21,17 @@ const auctionConfig = {
 };
 var auctionSlot;
 var adUnitCode;
-adUnitCode = "/62650033/privacy-sandbox-adunit";
+adUnitCode = "/22657645226/multiseller-demo";
 
 window.googletag = window.googletag || { cmd: [] };
 window.googletag.cmd.push(function () {
   auctionSlot = window.googletag
       .defineUnit(
           adUnitCode,
-          [300,250],
+          [300, 250],
           "fledge-iframe"
       )
-      .addService(window.googletag.pubads()).setTargeting("privacy-sandbox", "1");
+      .addService(window.googletag.pubads());
 
   auctionSlot.setConfig({
     componentAuction: [
