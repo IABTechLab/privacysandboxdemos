@@ -1,0 +1,39 @@
+:root {
+  --foregrounddisabled-38: rgba(0, 0, 0, 0.38);
+  --palettesecondary-default: rgba(0, 41, 31, 1);
+  --foregroundlight-60: rgba(0, 0, 0, 0.6);
+  --foregroundoutline-12: rgba(0, 0, 0, 0.12);
+  --palettestone: rgba(230, 230, 230, 1);
+  --backgroundwhite: rgba(255, 255, 255, 1);
+  --coloursstatusesneutral-light: rgba(194, 194, 194, 1);
+  --foregrounddefault-87: rgba(0, 0, 0, 0.87);
+  --body-2-font-family: "IBM Plex Sans", Helvetica;
+  --body-2-font-weight: 400;
+  --body-2-font-size: 16px;
+  --body-2-letter-spacing: 0.5px;
+  --body-2-line-height: 20px;
+  --body-2-font-style: normal;
+  --body-1-font-family: "IBM Plex Sans", Helvetica;
+  --body-1-font-weight: 400;
+  --body-1-font-size: 14px;
+  --body-1-letter-spacing: 0.25px;
+  --body-1-line-height: 18px;
+  --body-1-font-style: normal;
+  --button-default-font-family: "IBM Plex Sans", Helvetica;
+  --button-default-font-weight: 500;
+  --button-default-font-size: 14px;
+  --button-default-letter-spacing: 1.25px;
+  --button-default-line-height: normal;
+  --button-default-font-style: normal;
+  --caption-font-family: "IBM Plex Sans", Helvetica;
+  --caption-font-weight: 400;
+  --caption-font-size: 12px;
+  --caption-letter-spacing: 0.4000000059604645px;
+  --caption-line-height: 16px;
+  --caption-font-style: normal;
+  --elevation-08dp: 0px 5px 5px 0px rgba(0, 0, 0, 0.2), 0px 3px 14px 0px rgba(0, 0, 0, 0.12),
+    0px 8px 10px 0px rgba(0, 0, 0, 0.14);
+  --elevation-01dp: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 2px 1px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+

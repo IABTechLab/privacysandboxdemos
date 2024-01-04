@@ -1,0 +1,12 @@
+{
+	"renderUrls":{
+		"https://redash.test.indexexchange.com//advertiser/foo-ad-2.html":{
+			"shouldBlock":false,
+			"arbitrary-key":"arbitrary-value"
+		},
+		"https://redash.test.indexexchange.com//advertiser/test-ad-4.html":{
+			"shouldBlock":false,
+			"arbitrary-key":"arbitrary-value"
+		}
+	}
+}
