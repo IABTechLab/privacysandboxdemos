@@ -74,5 +74,8 @@ b.onclick = async () => {
     }
     old.replaceWith($iframe);
     //target.appendChild($iframe);
-  }
+  } else {
+    const adContainer = document.getElementById("ad-container");
+    adContainer.innerHTML = '<div class="demo-ad-slot-area" id="fledge-iframe">300x250 <br><br><p style="color:red">no auction winner</p></div>';
+  }    
 };
