@@ -128,6 +128,11 @@
             Donated by
             <a href="https://indexexchange.com">Index Exchange</a></p>
     </div>
+    <div style="text-align:center">
+        <a class="github-button" href="https://github.com/IABTechLab/privacysandboxdemos" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="medium" aria-label="View on GitHub">View on GitHub</a>
+    </div>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
 
 </div>
 </body>
@@ -143,5 +148,16 @@
         element.replaceWith(content);
     }
 
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/Joe12387/detectIncognito@v1.3.0/dist/es5/detectIncognito.min.js"></script>
+<script>
+    detectIncognito().then((result) => {
+        if (result.isPrivate) {
+            var element = document.getElementById("run");
+            var content = document.createTextNode("Privacy Sandbox not enabled in incognito mode");
+            element.replaceWith(content);
+        }
+    });
 </script>
 
