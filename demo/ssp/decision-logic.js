@@ -65,10 +65,8 @@ function reportResult(auctionConfig, browserSignals, directFromSellerSignals) {
 
 		console.groupCollapsed('browserSignals');
 			console.log( 'topWindowHostname: %s', browserSignals.topWindowHostname );
-			console.log( 'seller: %s', browserSignals.seller );
-			console.log( 'componentSeller: %s', browserSignals.componentSeller );
-			console.log( 'topLevelSeller: %s', browserSignals.topLevelSeller );
-		console.groupEnd();
+      console.log( 'interestGroupOwner: %s', browserSignals.interestGroupOwner );
+      console.groupEnd();
 	console.groupEnd();
 	console.groupEnd();
 

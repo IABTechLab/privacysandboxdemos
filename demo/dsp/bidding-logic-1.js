@@ -48,7 +48,7 @@ function generateBid(
 
   forDebuggingOnly.reportAdAuctionWin( interestGroup.owner + '//dsp/forDebuggingOnly?type=reportAdAuctionWin' + queryString );
   forDebuggingOnly.reportAdAuctionLoss( interestGroup.owner + '//dsp/forDebuggingOnly?type=reportAdAuctionLoss' + queryString );
-  
+
   return {
     ad: ad.metadata,
     bid: bidCPM,

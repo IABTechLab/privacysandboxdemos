@@ -9,10 +9,19 @@ function generateBid(
   trustedBiddingSignals,
   browserSignals
 ) {
-  var bidCPM = Math.floor(Math.random() * 100, 10);
-  var ad = interestGroup.ads[Math.floor(Math.random()*interestGroup.ads.length)];
 
-    log('generateBid', {
+  var ad = {};
+  var bidCPM = 0;
+
+  // https://developers.google.com/privacy-sandbox/relevance/protected-audience-api/k-anonymity
+  // due to the above, it's possible that none of the renderURLs associated with this interest group
+  // have crossed the k-anonymity threshold -- so handle this edge case by not submitting a bid
+  if( interestGroup.ads.length ) {
+    ad = interestGroup.ads[Math.floor(Math.random()*interestGroup.ads.length)];
+    bidCPM = (Math.random() * (2 - 0.01) + 0.01).toFixed(17);
+  }
+
+  log('generateBid', {
     bidCPM,
     interestGroup,
     auctionSignals,
@@ -75,6 +84,7 @@ function reportWin(
 			console.log( 'topWindowHostname: %s', browserSignals.topWindowHostname );
 			console.log( 'seller: %s', browserSignals.seller );
 			console.log( 'topLevelSeller: %s', browserSignals.topLevelSeller );
+			console.log( 'kAnonStatus: %s', browserSignals.kAnonStatus );
 		console.groupEnd();
 	console.groupEnd();
 
