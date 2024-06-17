@@ -24,6 +24,7 @@ function scoreAd(
 
 //		console.groupCollapsed('browserSignals');
 			console.log( 'topWindowHostname: %s', browserSignals.topWindowHostname );
+      console.log( 'interestGroupOwner: %s', browserSignals.interestGroupOwner );
 			console.log( 'seller: %s', browserSignals.seller );
 			console.log( 'componentSeller: %s', browserSignals.componentSeller );
 			console.log( 'topLevelSeller: %s', browserSignals.topLevelSeller );

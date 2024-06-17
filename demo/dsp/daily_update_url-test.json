@@ -1,7 +1,7 @@
 {
 	"ads": [
 		{
-			"renderUrl": "https://privacysandboxdemos-advertiser.casalemedia.com/advertiser/test-ad-3.html",
+			"renderUrl": "https://privacysandboxdemos-buyer-1.casalemedia.com/advertiser/test-ad-3.html",
 			"metadata": {
 				"type": "shoes",
 				"crid": "shoes_ad_3_crid",
@@ -14,7 +14,7 @@
 			}
 		},
 		{
-			"renderUrl": "https://privacysandboxdemos-advertiser.casalemedia.com/advertiser/test-ad-4.html",
+			"renderUrl": "https://privacysandboxdemos-buyer-1.casalemedia.com/advertiser/test-ad-4.html",
 			"metadata": {
 				"type": "shoes",
 				"crid": "shoes_ad_4_crid",

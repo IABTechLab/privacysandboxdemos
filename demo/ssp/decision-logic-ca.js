@@ -68,6 +68,7 @@ function reportResult(auctionConfig, browserSignals, directFromSellerSignals) {
 
 		console.groupCollapsed('browserSignals');
 			console.log( 'topWindowHostname: %s', browserSignals.topWindowHostname );
+      console.log( 'interestGroupOwner: %s', browserSignals.interestGroupOwner );
 			console.log( 'topLevelSeller: %s', browserSignals.topLevelSeller ); //only for component auctions
       console.log( 'topLevelSellerSignals: %o', browserSignals.topLevelSellerSignals ); //only for component auctions
       console.log( 'modifiedBid: %d', browserSignals.modifiedBid ); //only for component auctions

@@ -8,6 +8,8 @@ The purpose of this project is to provide tools to help organizations learn priv
 Validate that you have not disabled any Chrome APIs in your local browser. Open the following URL in chrome:
 chrome://flags/#privacy-sandbox-ads-apis
 
+Since [k-anonymity enforcement](https://developers.google.com/privacy-sandbox/relevance/protected-audience-api/k-anonymity) is being excluded from Mode A/B labelled traffic, you can assign your browser to a 'no-op' label cohort (e.g. `label_only_1`) using chrome://flags/#tpc-phase-out-facilitated-testing
+
 
 ## Observe events
 https://developer.chrome.com/blog/fledge-api/#observe-fledge-events and monitor console logs & network activity panel to see the demo in action.
